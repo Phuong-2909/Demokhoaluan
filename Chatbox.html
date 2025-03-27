@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbox</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="css/stylequestion.css">
+</head>
+<body>
+    <div class="container">
+    <header class="app-header">
+        <h1 class="heading">Xin chào bạn</h1>
+        <h2 class="sub-heading">Tôi có thể giúp được gì cho bạn?</h2>
+    </header>
+
+    <!--suggestion list-->
+    <ul class="suggestions">
+        <li class="suggestions-item">
+            <p class="text">Đưa ra đề xuất về địa điểm du lịch tại Việt Nam</p>
+            <span class="material-symbols-rounded">draw</span>
+        </li>
+        <li class="suggestions-item">
+            <p class="text">Dự đoán xu hướng du lịch tại Việt Nam</p>
+            <span class="material-symbols-rounded">lightbulb</span>
+        </li>
+        <li class="suggestions-item">
+            <p class="text">Đưa ra đề xuất về địa điểm du lịch phổ biến trên thế giới</p>
+            <span class="material-symbols-rounded">explore</span>
+        </li>
+        <li class="suggestions-item">
+            <p class="text">Dự đoán chi phí du lịch</p>
+            <span class="material-symbols-rounded">code_blocks</span>
+        </li>
+    </ul>
+    
+    <!--chats container-->
+    <div class="chats-container"></div>
+
+    <!--prompt container-->
+    <div class="prompt-container">
+        <div class="prompt-wrapper">
+            <form action="#" class="prompt-form">
+                <input type="text" placeholder="Đặt câu hỏi..." class="prompt-input"
+                required>
+                <div class="prompt-actions">
+                    <button id="send-prompt-btn" class="material-symbols-rounded">arrow_upward</button>
+                </div>
+            </form>
+
+            <button id="theme-toggle-btn" class="material-symbols-rounded">dark_mode</button>
+            <button id="delete-chats-btn" class="material-symbols-rounded">delete</button>
+        </div>
+
+        <p class="disclaimer-text">Phần mềm của chúng tôi có thể xảy ra lỗi, vì vậy hãy kiểm tra lại nhé!</p>
+
+    </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
