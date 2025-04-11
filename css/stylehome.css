@@ -308,29 +308,103 @@ header .navbar {
 .contact-section {
   padding: 50px 0 100px;
   background: var(--light-pink-color);
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 5rem;
-  padding: 5rem 0rem;
 }
+
 .contact-section .section-content {
   display: flex;
   gap: 48px;
   align-items: center;
   justify-content: space-between;
 }
+
 .contact-section .contact-info-list .contact-info {
   display: flex;
   gap: 20px;
   margin: 20px 0;
   align-items: center;
-  font-size: 12px;
-  margin-top: 1.2rem;
-  font-size: 14px;
-  margin: .5rem 0rem;
-  cursor: pointer;
 }
+
 .contact-section .contact-info-list .contact-info i {
   font-size: var(--font-size-m);
 }
+
+.contact-section .contact-form .form-input {
+  width: 100%;
+  height: 50px;
+  padding: 0 12px;
+  outline: none;
+  margin-bottom: 16px;
+  font-size: var(--font-size-s);
+  border-radius: var(--border-radius-s);
+  border: 1px solid var(--medium-gray-color);
+}
+
+.contact-section .contact-form {
+  max-width: 50%;
+}
+
+.contact-section .contact-form textarea.form-input {
+  height: 100px;
+  padding: 12px;
+  resize: vertical;
+}
+
+.contact-section .contact-form .form-input:focus {
+  border-color: var(--secondary-color);
+}
+
+.contact-section .contact-form .submit-button {
+  padding: 10px 28px;
+  outline: none;
+  margin-top: 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-radius-m);
+  background: var(--primary-color);
+  color: var(--white-color);
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-medium);
+  transition: 0.3s ease;
+}
+
+.contact-section .contact-form .submit-button:hover {
+  color: var(--primary-color);
+  background: transparent;
+}
+
+
+/* Footer section styling */
+.footer-section {
+  padding: 20px 0;
+  background: var(--dark-color);
+}
+
+.footer-section .section-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-section :where(.copyright-text, .social-link, .policy-link) {
+  color: var(--white-color);
+  transition: 0.2s ease;
+}
+
+.footer-section .social-link-list {
+  display: flex;
+  gap: 25px;
+}
+
+.footer-section .social-link-list .social-link {
+  font-size: var(--font-size-l);
+}
+
+.footer-section .social-link-list .social-link:hover,
+.footer-section .policy-text .policy-link:hover {
+  color: var(--secondary-color);
+}
+
+.footer-section .policy-text .separator {
+  color: #fff;
+  margin: 0 5px;
+}
+
